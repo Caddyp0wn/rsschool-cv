@@ -95,9 +95,7 @@ main{
   height: 25vh;
   line-height: 2;
 }
-.main-sections *{
-  white-space: ;
-}
+
 #contacts{
   border-top: none;
 }
