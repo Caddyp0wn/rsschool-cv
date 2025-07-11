@@ -2,22 +2,71 @@
 	  width: 118px;
   height: 181px;
   border-radius: 50%;;
-  
+  object-fit: cover;
+  margin-right: 300px;
+
 }	
+.contacts-list li:nth-of-type(1){
+list-style-image: url(./assets/discord-logo.svg);
+list-style-position: inside;
+}
+.contacts-list li:nth-of-type(2){
+list-style-image: url(./assets/email_logo.svg);
+list-style-position: inside;
+}
+.contacts-list li:nth-of-type(3){
+list-style-image: url(./assets/phone-logo.svg);
+list-style-position: inside;
+}
+header{
+  width: 100%;
+}
+.name_and_profession {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+  margin-top: 50px;
+  white-space: nowrap;
+}
+.name{
+ Font:  40px Quicksand;
+ letter-spacing: 4px;
+  padding: 20px 0;
+  white-space: nowrap;
+
+}
+.bottom_border{
+  border-bottom: 3px solid green;
+  width: 30%;
+}
+
+.profession{
+  margin-top: 50px;
+  white-space: nowrap;
+}
 nav {
   background-color: #f8f8f8;
   padding: 20px;
   border-bottom: 2px solid green;
   display: flex;
-      justify-content: center;
-      align-items: center;
-      height: auto;
+  justify-content: center;
+  height: auto;
 }
-header{
+.header-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 10px solid green;
+  flex-wrap: wrap;
+    overflow: clip;
+}
+.header-info{
+flex: 1 1 auto;
 }
 body {
-  font-family: sans-serif;
-  font-size: 20px;
+  font-family: arial;
+  font-size: 16px;
   width: 100%;
   min-height: 100vh;
 }
@@ -35,15 +84,24 @@ a{
 main{
 	display: grid;
   place-items: center;
-   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  padding: 20px;
+  padding: 0 1vw;
 }
 .main-sections{
-  	 display: grid;
-    align-items: center;
-    justify-content: center;
-	border: 2px solid green;
+  justify-content: left;
+	border-bottom: 2px solid green;
+  width: 35vw;
+  height: 25vh;
+  line-height: 2;
+}
+#about {
+  line-height: 1.5;
+
+}
+h2 {
+  margin: 10px 0;
+}
+ul{
+  list-style-position: inside;
 }
