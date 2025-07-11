@@ -3,7 +3,6 @@
   height: 181px;
   border-radius: 50%;;
   object-fit: cover;
-  margin-right: 300px;
 
 }	
 .contacts-list li:nth-of-type(1){
@@ -24,7 +23,7 @@ header{
 .name_and_profession {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 95%;
   align-items: center;
   margin-top: 50px;
   white-space: nowrap;
@@ -38,11 +37,12 @@ header{
 }
 .bottom_border{
   border-bottom: 3px solid green;
-  width: 30%;
+  width: 20%;
 }
 
 .profession{
-  margin-top: 50px;
+  margin-top:10px;
+  font-weight: bold;
   white-space: nowrap;
 }
 nav {
@@ -52,14 +52,14 @@ nav {
   display: flex;
   justify-content: center;
   height: auto;
+  white-space: nowrap;
 }
 .header-section{
   display: flex;
   flex-direction: row;
   justify-content: center;
   border-bottom: 10px solid green;
-  flex-wrap: wrap;
-    overflow: clip;
+  flex-wrap: nowrap;
 }
 .header-info{
 flex: 1 1 auto;
@@ -90,10 +90,16 @@ main{
 }
 .main-sections{
   justify-content: left;
-	border-bottom: 2px solid green;
+	border-top: 2px solid green;
   width: 35vw;
   height: 25vh;
   line-height: 2;
+}
+.main-sections *{
+  white-space: ;
+}
+#contacts{
+  border-top: none;
 }
 #about {
   line-height: 1.5;
@@ -104,4 +110,35 @@ h2 {
 }
 ul{
   list-style-position: inside;
+  list-style-type: none;
+  
+}
+ol{
+  list-style-position: inside;
+
+}
+footer{
+   background-color: #f8f8f8;
+  padding: 20px;
+  border-top: 2px solid green;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+#rsschool-logo{
+ width: 60px;
+ height: auto;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+}
+#skills ul li:nth-of-type(1){
+list-style-image: url(./assets/html-logo.svg);
+}
+#skills ul li:nth-of-type(2){
+list-style-image: url(./assets/css-logo.svg);
+}
+#skills ul li:nth-of-type(3){
+list-style-image: url(./assets/js-logo.svg);
 }
