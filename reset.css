@@ -1,0 +1,30 @@
+/* reset.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*  Учитывает отступы и границы в общей ширине/высоте элемента */
+}
+
+/* Сброс стилей для списка */
+ul[class],
+ol[class] {
+  padding: 0;
+  list-style: none;
+}
+
+/* Сброс стилей для заголовков и параграфов */
+h1, h2, h3, h4, h5, h6,
+p {
+  margin: 0;
+}
+
+/* Сброс стилей для ссылок */
+a {
+  text-decoration: none;
+}
+
+/*  Сброс стилей для изображений */
+img {
+  display: block;
+  max-width: 100%;
+}
